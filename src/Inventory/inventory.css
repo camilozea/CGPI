@@ -1,0 +1,68 @@
+.container-inventory {
+  width: 100vw;
+  padding: 2vw;
+}
+
+.inventory-table-container {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.inventory-table thead {
+  background: #2c3e50;
+  color: white;
+}
+
+.inventory-table th,
+.inventory-table td {
+  border: 0.5px solid #ccc;
+  padding: 10px;
+}
+
+/* Botones de acción */
+.button-edit,
+.button-delete {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  text-align: center;
+}
+
+.button-edit {
+  justify-items: center;
+  background: green;
+  color: white;
+  margin-right: 9px;
+}
+
+.button-edit:hover {
+  opacity: 0.9;
+}
+
+.button-delete {
+  background: red;
+  color: white;
+}
+
+.button-delete:hover {
+  opacity: 0.9;
+}
+.button-export {
+  padding: 10px 20px;
+
+  color: white;
+  border-radius: 50px;
+  background: forestgreen;
+  margin: 10px;
+  justify-content: start;
+}
+
+.select {
+  margin: 1.5vw;
+  justify-content: end;
+}

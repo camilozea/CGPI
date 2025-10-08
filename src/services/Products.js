@@ -1,0 +1,20 @@
+const LoadingsProducts = async () => {
+  const response = await fetch(
+    `https://api-generator.retool.com/xDObFJ/data?_page=5&_limit=10`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error("Network response was not ok");
+  }
+
+  const data = await response.json();
+  return data;
+};
+
+export default LoadingsProducts;

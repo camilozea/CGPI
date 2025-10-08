@@ -1,0 +1,91 @@
+.sales-container {
+  width: 100vw;
+  padding: 1.5vh;
+}
+
+/* Contenedor del botón de agregar producto */
+.sales-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-busqueda {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-select {
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: #c4daeefd;
+}
+/* Botón de agregar producto */
+.butron-add {
+  display: flex;
+  align-items: center;
+  background: #2c3e50;
+  font-size: 10px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding: 10px 15px;
+}
+
+.butron-add:hover {
+  background: #1a252f;
+}
+
+/* Tabla de productos */
+.sales-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.sales-table thead {
+  background: #2c3e50;
+  color: white;
+}
+
+.sales-table th,
+.sales-table td {
+  border: 0.5px solid #ccc;
+  padding: 10px;
+}
+
+/* Botones de acción */
+.butron-edit,
+.butron-delete {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  text-align: center;
+}
+
+.butron-edit {
+  justify-items: center;
+  background: green;
+  color: white;
+  margin-right: 9px;
+}
+
+.butron-edit:hover {
+  opacity: 0.9;
+}
+
+.butron-delete {
+  background: red;
+  color: white;
+}
+
+.butron-delete:hover {
+  opacity: 0.9;
+}

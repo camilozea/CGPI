@@ -1,0 +1,97 @@
+.register-link {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.container-logo-inverso {
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+}
+
+.container-login {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 60px;
+}
+
+h1 {
+  margin: 8vh;
+}
+
+label {
+  margin: 10px;
+}
+
+input {
+  color: rgb(44, 62, 80);
+  background: rgb(236, 240, 241);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.button-login {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 2.5vh;
+}
+
+.register-link {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.loader {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #2c3e50;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  --b: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgb(44, 62, 80);
+  -webkit-mask: repeating-conic-gradient(
+      #0000 0deg,
+      #000 1deg 70deg,
+      #0000 71deg 90deg
+    ),
+    radial-gradient(
+      farthest-side,
+      #0000 calc(100% - var(--b) - 1px),
+      #000 calc(100% - var(--b))
+    );
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: l5 1s infinite;
+}
+@keyframes l5 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
